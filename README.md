@@ -11,3 +11,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Reactjs
   - TailwindCSS
 
+## Deployed on Heroku
+  Link: https://photo-searching-app.herokuapp.com/
+
