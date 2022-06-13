@@ -5,7 +5,7 @@ import Scroll from './components/Scroll';
 import Search from './components/Search';
 import { fetchPhotos } from './utils.js';
 
-const API_KEY = "563492ad6f91700001000001f73452ae792a4460b7be2366dda82b86";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 let options = {
   "method": "GET",
@@ -14,7 +14,6 @@ let options = {
     "Authorization": API_KEY,
   },
 };
-
 
 function App() {
   const [query, setQuery] = useState('');
@@ -38,7 +37,6 @@ function App() {
   const addQuery = keyword => {
     setQuery(keyword);
   }
-  console.log(query);
   
   return (
     <div className="container flex flex-wrap bg-indigo-200 h-full w-full justify-center item-center">
