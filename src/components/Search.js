@@ -11,9 +11,9 @@ const Search = ({ addQuery }) => {
   }
 
   return (
-    <div className='pt-2 relative mx-auto text-gray-600 mb-4'>
-      <form onSubmit={handleSubmit}>
-        <input className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+    <div className='z-40 text-center pt-2 fixed w-full mx-auto text-gray-600 mb-4 pt-5 bg-indigo-200'>
+      <form onSubmit={handleSubmit} className="w-full">
+        <input className="border border-blue-500 w-2/5 bg-white h-10 px-5 pr-16 py-2 rounded-lg text-md font-bold focus:outline-none"
           type="search" 
           name='search' 
           id='search'
@@ -21,8 +21,9 @@ const Search = ({ addQuery }) => {
           value={val}
           onChange={(e) => setVal(e.target.value)}
         />
-        <button className="text-center text-slate-800 bg-indigo-500 shadow-lg shadow-indigo-500/50 border-2 border-gray-300 w-20 ml-1 h-10 rounded-lg text-md"><strong>Search</strong></button>
+        <button className="ml-4 bg-indigo-500 hover:bg-blue-500 text-slate-900 font-semibold hover:text-white py-2 px-5 border border-blue-500 hover:border-transparent rounded-lg "><strong>Search</strong></button>
       </form>
+      <div class="w-full border-t border-slate-500 mt-6"></div>
     </div>
   );
 }

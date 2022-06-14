@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="container flex flex-wrap bg-indigo-200 h-full w-full justify-center item-center">
       <Search addQuery={addQuery}/>
-      <Photos photos={photos} page={page} loading={loading}/>
+      <Photos photos={photos} page={page} loading={loading} query={query}/>
       <Pagination 
         photosPerPage={photosPerPage} 
         totalPhotos={photos.length} 
