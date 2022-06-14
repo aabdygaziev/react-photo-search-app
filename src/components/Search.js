@@ -23,7 +23,7 @@ const Search = ({ addQuery }) => {
         />
         <button className="ml-4 bg-indigo-500 hover:bg-blue-500 text-slate-900 font-semibold hover:text-white py-2 px-5 border border-blue-500 hover:border-transparent rounded-lg "><strong>Search</strong></button>
       </form>
-      <div class="w-full border-t border-slate-500 mt-6"></div>
+      <div class="w-full border-t border-slate-400 mt-6"></div>
     </div>
   );
 }
