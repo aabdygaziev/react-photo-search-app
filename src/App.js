@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Photos from './components/Photos';
 import Pagination from './components/Pagination';
-import Scroll from './components/Scroll';
 import Search from './components/Search';
 import { fetchPhotos } from './utils.js';
 
