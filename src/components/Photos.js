@@ -15,7 +15,7 @@ function Photos({ photos, loading, page, itemsPerPage=10, query }) {
   }
 
   return (
-    <div className="z-30 grid grid-rows-5 grid-flow-col mt-28 rounded shadow-lg gap-4 w-mx-md">
+    <div className="z-30 lg:grid lg:grid-rows-5 lg:grid-flow-col mt-28 rounded shadow-lg gap-4 w-mx-md md:grid-rows-10 md:grid-flow-col md:grid-cols-1">
       {photosToRender.map(photo => {
         return (
           <div class="max-w-sm rounded shadow-lg border border-blue-200">
